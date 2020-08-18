@@ -260,9 +260,18 @@
     width: 100%;
     height: 100%;
     &__top {
-      flex-direction: column;
+      // flex-direction: row-reverse;
+      flex-wrap: wrap;
+
       &__col {
         margin-bottom: 3.2rem;
+        width: 45%;
+        &__form-group {
+          width: 90%;
+          & input {
+            width: 100%;
+          }
+        }
       }
     }
     &__seperator {
@@ -274,25 +283,6 @@
       & .paragraph {
         margin-top: 3.2rem;
       }
-    }
-  }
-}
-.reviews {
-  padding: 9.6rem 16rem;
-  &__cards {
-    display: flex;
-    justify-content: space-between;
-    &__card {
-      &:not(:last-child) {
-        margin-right: 1.6rem;
-      }
-      &:not(:first-child) {
-        margin-left: 1.6rem;
-      }
-      width: 33%;
-      height: 32rem;
-      background: $color-white;
-      box-shadow: 0px 2px 5px rgba(63, 63, 63, 0.25);
     }
   }
 }

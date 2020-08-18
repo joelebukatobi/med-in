@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d dist",
-    "watch:sass": "node-sass dist/sass/main.scss dist/css/style.css -w",
+    "watch:sass": "node-sass sass/main.scss dist/css/style.css -w",
     "devserver": "live-server --open=/dist",
     "start": "npm-run-all --parallel devserver watch:sass",
-    "compile:sass": "node-sass dist/sass/main.scss dist/css/style.comp.css",
+    "compile:sass": "node-sass sass/main.scss dist/css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' dist/css/style.comp.css -o dist/css/style.prefix.css",
     "compress:css": "node-sass dist/css/style.prefix.css dist/css/style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css"
