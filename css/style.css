@@ -72,7 +72,7 @@ body {
 
 .heading-5 {
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase; }
 
 .paragraph {
@@ -262,9 +262,14 @@ body {
       width: 100%;
       height: 100%; }
       .footer__top {
-        flex-direction: column; }
+        flex-wrap: wrap; }
         .footer__top__col {
-          margin-bottom: 3.2rem; }
+          margin-bottom: 3.2rem;
+          width: 45%; }
+          .footer__top__col__form-group {
+            width: 90%; }
+            .footer__top__col__form-group input {
+              width: 100%; }
       .footer__seperator {
         margin: 2.4rem 0; }
       .footer__bottom {
@@ -273,26 +278,15 @@ body {
         .footer__bottom .paragraph {
           margin-top: 3.2rem; } }
 
-.reviews {
-  padding: 9.6rem 16rem; }
-  .reviews__cards {
-    display: flex;
-    justify-content: space-between; }
-    .reviews__cards__card {
-      width: 33%;
-      height: 32rem;
-      background: #ffffff;
-      box-shadow: 0px 2px 5px rgba(63, 63, 63, 0.25); }
-      .reviews__cards__card:not(:last-child) {
-        margin-right: 1.6rem; }
-      .reviews__cards__card:not(:first-child) {
-        margin-left: 1.6rem; }
-
 .heading-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #ffffff; }
+  .heading-header .heading-1,
+  .heading-header .heading-2,
+  .heading-header .heading-5 {
+    text-align: center; }
   .heading-header .heading-5 {
     margin-bottom: 1.6rem; }
   .heading-header .seperator {
@@ -302,6 +296,10 @@ body {
   .heading-header .paragraph {
     width: 72rem;
     text-align: center; }
+    @media (min-width: 320px) and (max-width: 576px) {
+      .heading-header .paragraph {
+        padding: 0 2.4rem;
+        width: auto; } }
 
 .heading-other {
   display: flex;
@@ -309,8 +307,16 @@ body {
   align-items: center;
   color: #4c4f91;
   margin-bottom: 5.6rem; }
+  @media (min-width: 320px) and (max-width: 576px) {
+    .heading-other {
+      padding: 0 2.4rem; } }
+  .heading-other .heading-1,
+  .heading-other .heading-2,
   .heading-other .heading-5 {
-    margin-bottom: 1.6rem; }
+    text-align: center; }
+  .heading-other .heading-5 {
+    margin-bottom: 1.6rem;
+    text-align: center; }
   .heading-other .seperator {
     border: 1px solid #4ad891;
     width: 5rem;
@@ -319,6 +325,10 @@ body {
     width: 72rem;
     text-align: center;
     color: #000000; }
+    @media (min-width: 320px) and (max-width: 576px) {
+      .heading-other .paragraph {
+        padding: 0 2.4rem;
+        width: auto; } }
 
 .header {
   position: relative; }
@@ -364,9 +374,20 @@ body {
         height: 4.8rem; }
       .header__box__col .heading-4 {
         font-weight: 400; }
+    @media (min-width: 320px) and (max-width: 576px) {
+      .header__box {
+        padding: 0 2.4rem;
+        height: auto; }
+        .header__box__col {
+          padding: 1.6rem 0 2.4rem 0; }
+          .header__box__col img {
+            height: 2.4rem;
+            margin-bottom: 0.8rem; }
+          .header__box__col .heading-4 {
+            text-align: center; } }
 
 .about {
-  padding: 9.6rem 16rem;
+  padding: 9.6rem 2.4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -380,6 +401,9 @@ body {
   .about__cards {
     display: flex;
     justify-content: space-between; }
+    @media (min-width: 320px) and (max-width: 576px) {
+      .about__cards {
+        flex-direction: column; } }
     .about__cards__card {
       box-shadow: 0px 2px 2px rgba(87, 87, 87, 0.15); }
       .about__cards__card:not(:last-child) {
@@ -393,6 +417,13 @@ body {
         color: #4c4f91; }
       .about__cards__card .paragraph {
         margin: 1.6rem; }
+      @media (min-width: 320px) and (max-width: 576px) {
+        .about__cards__card {
+          margin-bottom: 2.4rem; }
+          .about__cards__card:not(:last-child) {
+            margin-right: 0rem; }
+          .about__cards__card:not(:first-child) {
+            margin-left: 0rem; } }
 
 .hours {
   padding: 9.6rem 16rem;
@@ -426,6 +457,26 @@ body {
     left: 0;
     top: 0;
     z-index: -2; }
+  @media (min-width: 320px) and (max-width: 576px) {
+    .hours {
+      flex-direction: column;
+      padding: 4.8rem 2.4rem; }
+      .hours__working .heading-other {
+        align-items: center;
+        padding: 0; }
+        .hours__working .heading-other .paragraph {
+          text-align: center;
+          padding: 0;
+          width: auto; }
+      .hours__working img {
+        width: 100%;
+        height: 100%; }
+      .hours__image {
+        display: none; }
+      .hours__timeline {
+        margin-top: 4.8rem;
+        width: 100%;
+        height: 50rem; } }
 
 .specialization {
   padding: 9.6rem 16rem;
@@ -456,10 +507,22 @@ body {
       .specialization__container__image img {
         width: 100%;
         height: 100%; }
+  @media (min-width: 320px) and (max-width: 576px) {
+    .specialization {
+      padding: 5.6rem 2.4rem; }
+      .specialization__container {
+        flex-direction: column-reverse; }
+        .specialization__container__list {
+          width: 100%;
+          padding: 4.8rem; }
+        .specialization__container__image {
+          width: 100%; }
+          .specialization__container__image img {
+            width: 100%;
+            height: 100%; } }
 
 .banner {
   padding: 9.6rem 0;
-  height: 48rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -475,10 +538,8 @@ body {
     display: flex;
     justify-content: space-between; }
     .reviews__cards__card {
-      position: relative;
       padding: 2.4rem;
       width: 33%;
-      height: 35rem;
       background: #f5f5fe;
       box-shadow: 0px 1px 2px rgba(63, 63, 63, 0.25); }
       .reviews__cards__card:not(:last-child) {
@@ -487,12 +548,37 @@ body {
         margin-left: 1.6rem; }
       .reviews__cards__card .paragraph {
         font-style: italic;
-        font-size: 1.4rem; }
-      .reviews__cards__card__caption {
-        width: 100%;
-        position: absolute;
-        bottom: 1.6rem; }
-        .reviews__cards__card__caption .seperator {
-          width: 5rem;
-          margin-bottom: 0.8rem;
-          border: 1px solid #4ad891; }
+        font-size: 1.4rem;
+        margin-bottom: 2.4rem; }
+      .reviews__cards__card .seperator {
+        width: 5rem;
+        margin-bottom: 0.8rem;
+        border: 1px solid #4ad891; }
+  @media (min-width: 320px) and (max-width: 576px) {
+    .reviews {
+      padding: 5.6rem 7.2em; }
+      .reviews__cards {
+        flex-direction: column; }
+        .reviews__cards__card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 5rem;
+          margin-bottom: 5.6rem;
+          width: 100%; }
+          .reviews__cards__card:not(:last-child) {
+            margin-right: 0rem; }
+          .reviews__cards__card:not(:first-child) {
+            margin-left: 0rem; }
+          .reviews__cards__card .paragraph {
+            font-style: italic;
+            font-size: 2.1rem;
+            margin-bottom: 4.8rem; }
+          .reviews__cards__card .paragraph:nth-of-type(2) {
+            font-style: normal;
+            font-size: 2.1rem;
+            margin-bottom: 0rem; }
+          .reviews__cards__card .heading-h4 {
+            font-size: 2.1rem; }
+          .reviews__cards__card .seperator {
+            margin-bottom: 0.8rem; } }
