@@ -146,7 +146,7 @@
 }
 
 .about {
-  padding: 9.6rem 2.4rem;
+  padding: 9.6rem 16rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -411,6 +411,27 @@
           margin-bottom: 0.8rem;
         }
       }
+    }
+  }
+}
+
+// About Page
+.who-we-are {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16rem 9.6rem 16rem;
+  .heading-other {
+    align-items: start;
+    .paragraph {
+      width: 24rem;
+      text-align: left;
+    }
+  }
+  &__image {
+    & img {
+      width: 80rem;
+      height: 55rem;
     }
   }
 }

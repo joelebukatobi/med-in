@@ -393,7 +393,7 @@ body {
             text-align: center; } }
 
 .about {
-  padding: 9.6rem 2.4rem;
+  padding: 9.6rem 16rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -588,3 +588,17 @@ body {
             font-size: 2.1rem; }
           .reviews__cards__card .seperator {
             margin-bottom: 0.8rem; } }
+
+.who-we-are {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16rem 9.6rem 16rem; }
+  .who-we-are .heading-other {
+    align-items: start; }
+    .who-we-are .heading-other .paragraph {
+      width: 24rem;
+      text-align: left; }
+  .who-we-are__image img {
+    width: 80rem;
+    height: 55rem; }
