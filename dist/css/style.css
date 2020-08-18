@@ -331,7 +331,8 @@ body {
         width: auto; } }
 
 .header {
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
   .header__content {
     display: flex;
     align-items: center;
@@ -354,6 +355,11 @@ body {
         height: 100%;
         content: "";
         background-color: rgba(76, 79, 145, 0.8); }
+      @media screen and (max-width: 576px) {
+        .header__content__image img {
+          width: 200%;
+          height: 100%;
+          margin-left: -20rem; } }
   .header__box {
     position: relative;
     display: flex;
