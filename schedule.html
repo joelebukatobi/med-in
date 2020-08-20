@@ -32,7 +32,7 @@
     <nav class="navbar__nav">
       <ul class="navbar__nav__list">
         <li class="navbar__nav__list__item">
-          <a class="navbar__nav__list__item__link" href="index.html">Home</a>
+          <a class="navbar__nav__list__item__link active" href="index.html">Home</a>
         </li>
         <li class="navbar__nav__list__item">
           <a class="navbar__nav__list__item__link" href="about.html">About Us</a>
@@ -41,7 +41,7 @@
           <a class="navbar__nav__list__item__link" href="our-doctors.html">Our Doctors</a>
         </li>
         <li class="navbar__nav__list__item">
-          <a class="navbar__nav__list__item__link active" href="services.html">Services</a>
+          <a class="navbar__nav__list__item__link" href="services.html">Services</a>
         </li>
         <li class="navbar__nav__list__item">
           <a class="navbar__nav__list__item__link" href="schedule.html">Our Schedule</a>
@@ -55,94 +55,24 @@
     </nav>
   </header>
 
+
   <!-- Header -->
   <div class="header">
     <div class="header__content">
       <div class="heading-header">
         <h5 class="heading-5">Health Execllence</h5>
-        <h1 class="heading-1">Our Services</h1>
+        <h1 class="heading-1">Our Schedules</h1>
         <hr class="seperator">
-        <!-- <p class="paragraph">
-          Our vision in Med-In specialist Hospital is to be a one-stop hospital that provides fully integrated Medicare
-          solutions and health-related services to Nigeria populace and beyond. And our core values are: Empathy,
-          Professionalism, Innovation, Patient Satisfaction and Integrity.
-        </p> -->
       </div>
+
       <div class="header__content__image">
-        <img src="images/image-5.jpg" alt="">
+        <img src="images/image-6.jpg" alt="">
       </div>
     </div>
   </div>
 
-  <div class="services">
-    <div class="services__cards">
-      <div class="services__cards__card">
-        <div class="services__cards__card__image">
-          <img src="images/general-medicine.svg" alt="">
-        </div>
-        <div class=" services__cards__card__text">
-          <h4 class="heading-4">
-            General Medicine
-          </h4>
-          <hr class="services__cards__card__text__seperator">
-          <p class="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus convallis nisl libero amet mattis risus
-            lacus tincidunt praesent. Tellus dolor facilisis suspendisse gravida sit faucibus rhoncus netus
-          </p>
-        </div>
-      </div>
-      <div class="services__cards__card">
-        <div class="services__cards__card__image">
-          <img src="images/dental.svg" alt="">
-        </div>
-        <div class=" services__cards__card__text">
-          <h4 class="heading-4">
-            Dental Clinic
-          </h4>
-          <hr class="services__cards__card__text__seperator">
-          <p class="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus convallis nisl libero amet mattis risus
-            lacus tincidunt praesent. Tellus dolor facilisis suspendisse gravida sit faucibus rhoncus netus
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="services__cards">
-      <div class="services__cards__card">
-        <div class="services__cards__card__image">
-          <img src="images/diagnosis.svg" alt="">
-        </div>
-        <div class=" services__cards__card__text">
-          <h4 class="heading-4">
-            Diagnostics
-          </h4>
-          <hr class="services__cards__card__text__seperator">
-          <p class="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus convallis nisl libero amet mattis risus
-            lacus tincidunt praesent. Tellus dolor facilisis suspendisse gravida sit faucibus rhoncus netus
-          </p>
-        </div>
-      </div>
-      <div class="services__cards__card">
-        <div class="services__cards__card__image">
-          <img src="images/ambulance.svg" alt="">
-        </div>
-        <div class=" services__cards__card__text">
-          <h4 class="heading-4">
-            Ambulance
-          </h4>
-          <hr class="services__cards__card__text__seperator">
-          <p class="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus convallis nisl libero amet mattis risus
-            lacus tincidunt praesent. Tellus dolor facilisis suspendisse gravida sit faucibus rhoncus netus
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Hours -->
-  <div class="hours">
+  <!-- Working Hours -->
+  <div class="hours bg-white">
     <div class="hours__working">
       <div class="heading-other">
         <h5 class="heading-5">Schedule</h5>
@@ -164,25 +94,33 @@
     </div>
   </div>
 
-  <div class="about-section facilities mt-1">
-    <div class="about-section__text">
-      <div class="heading-other">
-        <h5 class="heading-5">About Us</h5>
-        <h2 class="heading-2">Our Facilities</h2>
-        <hr class="seperator">
-        <p class="paragraph">
-          As a God inspired hospital, our vision is to be a one-stop hospital that provides fully integrated Medicare
-          solutions and health related services to the Nigeria populace and beyond.
-
-        </p>
+  <!-- Form -->
+  <div class="schedule">
+    <div class="heading-other">
+      <h5 class="heading-5">OUR SCHEDULES</h5>
+      <h1 class="heading-1">Book an Appointment</h1>
+      <hr class="seperator">
+    </div>
+    <form class="schedule__form">
+      <div class="schedule__form__form-group">
+        <input type="text" placeholder="John">
+        <input type="text" placeholder="Doe">
       </div>
-    </div>
-    <div class="about-section__image">
-      <img src="images/image-13.jpg" alt="">
-      <img src="images/image-10.jpg" alt="">
-    </div>
-  </div>
+      <div class="schedule__form__form-group">
+        <input type="email" placeholder="mail@example.com">
+      </div>
+      <div class="schedule__form__form-group">
+        <select name="services">
+          <option value="">Dental</option>
+          <option value="">ENT Consultation</option>
+          <option value="">Physiotheraphy Consultation</option>
+          <option value="">General Medicine</option>
+        </select>
+      </div>
+      <button class="schedule__form__btn btn">SEND</button>
+    </form>
 
+  </div>
   <!-- Footer -->
   <footer class="footer">
     <div class="footer__top">
