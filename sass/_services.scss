@@ -1,0 +1,61 @@
+.services {
+  padding: 10.4rem 16rem;
+  display: flex;
+  flex-direction: column;
+  &__cards {
+    display: flex;
+    justify-content: space-evenly;
+    &:not(:last-of-type) {
+      margin-bottom: 7.2rem;
+    }
+    &__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 40%;
+      // height: 24rem;
+      padding: 2.4rem;
+      box-shadow: 0px 0px 5px rgba(87, 87, 87, 0.25);
+      &__image {
+        margin-bottom: 0.8rem;
+      }
+
+      &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & .heading-4 {
+          text-align: center;
+        }
+
+        &__seperator {
+          width: 5rem;
+          border: 1px solid $color-secondary;
+          margin: 1.6rem 0;
+        }
+      }
+    }
+  }
+  @media (min-width: 320px) and (max-width: 576px) {
+    padding: 10.4rem 4.8rem;
+    &__cards {
+      flex-direction: column;
+      &:not(:last-of-type) {
+        margin-bottom: 0rem;
+      }
+      &__card {
+        width: 100%;
+        margin-bottom: 7.2rem;
+        padding: 4.8rem 9.6rem;
+        &__text {
+          & .paragraph {
+            text-align: center;
+          }
+        }
+        @media (min-width: 320px) and (max-width: 375px) {
+          padding: 3.2rem;
+        }
+      }
+    }
+  }
+}

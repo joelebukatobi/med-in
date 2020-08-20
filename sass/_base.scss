@@ -16,7 +16,18 @@ $font-secondary: "Open Sans", sans-serif;
   Mixins 
   ------
 */
+@mixin mt-1 {
+  margin-top: 10.4rem;
+}
 
+@mixin mb-1 {
+  margin-bottom: 10.4rem;
+}
+@mixin bg-white {
+  &::after {
+    background: $color-white;
+  }
+}
 /*
   Mobile Responsiveness
   ---------------------
