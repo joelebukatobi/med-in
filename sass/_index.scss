@@ -1,5 +1,4 @@
 .heading-header {
-  // position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +25,7 @@
     text-align: center;
     @media (min-width: 320px) and (max-width: 576px) {
       padding: 0 2.4rem;
-      width: 100%;
+      width: auto;
     }
   }
 }
@@ -38,7 +37,7 @@
   color: $color-primary;
   margin-bottom: 5.6rem;
   @media (min-width: 320px) and (max-width: 576px) {
-    padding: 0 2.4rem;
+    padding: 0rem;
   }
 
   & .heading-1,
@@ -62,8 +61,8 @@
     text-align: center;
     color: $color-black;
     @media (min-width: 320px) and (max-width: 576px) {
-      padding: 0 2.4rem;
-      width: 100%;
+      padding: 0 0;
+      width: auto;
     }
   }
 }
@@ -146,7 +145,7 @@
         }
       }
     }
-    @media (min-width: 320px) and (max-width: 360px) {
+    @media (min-width: 320px) and (max-width: 375px) {
       padding: 0;
       &__col {
         padding: 1.6rem 2.4rem;
@@ -224,7 +223,7 @@
     }
   }
   @media (min-width: 320px) and (max-width: 576px) {
-    padding: 6.4rem;
+    padding: 6.4rem 4.8rem;
   }
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     padding: 9.6rem 4.8rem;
@@ -256,8 +255,27 @@
     }
   }
   &__timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color-white;
     width: 48rem;
     background: $color-primary;
+    padding: 2.4rem 3.2rem;
+    & .heading-4 {
+      font-weight: 400;
+    }
+    &__group {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 1.6rem;
+      &__row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.6rem;
+      }
+    }
   }
   &__image {
     position: absolute;
@@ -302,7 +320,13 @@
     &__timeline {
       margin-top: 4.8rem;
       width: 100%;
-      height: 50rem;
+      height: 100%;
+      &__group {
+        margin-top: 2.4rem;
+        &__row {
+          margin-bottom: 2.4rem;
+        }
+      }
     }
   }
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {

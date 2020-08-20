@@ -10,7 +10,7 @@ $color-black: #000000;
   Font Variables
   --------------
 */
-$font-primary: "Lato", sans-serif;
+$font-primary: "Quicksand", sans-serif;
 $font-secondary: "Open Sans", sans-serif;
 /* 
   Mixins 
@@ -23,6 +23,14 @@ $font-secondary: "Open Sans", sans-serif;
 @mixin mb-1 {
   margin-bottom: 10.4rem;
 }
+
+@mixin mb-2 {
+  margin-bottom: 0.8rem;
+  @media (min-width: 320px) and (max-width: 576px) {
+    margin-bottom: 2.4rem;
+  }
+}
+
 @mixin bg-white {
   &::after {
     background: $color-white;
@@ -62,6 +70,15 @@ input:focus,
 input:active {
   outline: none;
   background-color: tranparent;
+}
+
+input::placeholder {
+  font-family: $font-primary;
+}
+
+textarea::placeholder {
+  font-family: $font-primary;
+  font-size: 1.6rem;
 }
 
 button:link,
