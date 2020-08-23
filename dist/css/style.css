@@ -151,6 +151,8 @@ body {
         .navbar__nav__list__item .active {
           border-bottom: 1.5px solid #4ad891;
           padding: 0 0 0.5rem 0; }
+          .navbar__nav__list__item .active .btn {
+            background-color: #4ad891; }
         .navbar__nav__list__item:not(:last-child) {
           margin-right: 2.4rem; }
         .navbar__nav__list__item__link {
@@ -1111,6 +1113,8 @@ body {
     .contact-us .heading-other .paragraph {
       width: 24rem;
       text-align: left; }
+    .contact-us .heading-other .seperator {
+      margin: 0.8rem 0 1.6rem 0; }
     .contact-us .heading-other .form {
       display: flex;
       flex-direction: column; }
@@ -1139,9 +1143,9 @@ body {
           margin-bottom: 2.4rem;
           text-align: left; }
       .contact-us .heading-other .form__btn {
-        height: 5.6rem;
+        height: 4.8rem;
         width: 50%;
-        background-color: #4ad891; }
+        background-color: #4c4f91; }
   .contact-us__image {
     width: 65%; }
     .contact-us__image img {

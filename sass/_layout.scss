@@ -63,6 +63,9 @@
         & .active {
           border-bottom: 1.5px solid $color-secondary;
           padding: 0 0 0.5rem 0;
+          & .btn {
+            background-color: $color-secondary;
+          }
         }
         &:not(:last-child) {
           margin-right: 2.4rem;
