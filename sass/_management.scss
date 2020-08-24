@@ -30,10 +30,7 @@
     & .paragraph {
       width: 57rem;
       margin-bottom: 0.8rem;
-    }
-
-    & .paragraph:nth-of-type(2) {
-      width: 32rem;
+      text-align: justify;
     }
   }
   @media (min-width: 320px) and (max-width: 576px) {
@@ -102,10 +99,7 @@
     & .paragraph {
       width: 57rem;
       margin-bottom: 0.8rem;
-    }
-
-    & .paragraph:nth-of-type(2) {
-      width: 32rem;
+      text-align: justify;
     }
   }
   @media (min-width: 320px) and (max-width: 576px) {
