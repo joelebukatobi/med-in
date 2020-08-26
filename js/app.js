@@ -24,3 +24,9 @@ function openMenu() {
     header.style.height = "auto";
   }
 }
+$('[data-fancybox="gallery"]').fancybox({
+  slideShow: {
+    autoStart: true,
+    speed: 5000,
+  },
+});
