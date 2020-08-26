@@ -616,8 +616,6 @@ body {
   padding: 10.4rem 16rem;
   display: flex;
   flex-direction: column; }
-  .specialization .heading {
-    margin-bottom: 4.8rem; }
   .specialization__container {
     display: flex;
     width: 100%; }
@@ -674,6 +672,50 @@ body {
     margin-top: 2.4rem;
     background-color: #4ad891;
     height: 4.8rem; }
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10.4rem 0rem; }
+  .carousel__slide .owl-carousel {
+    position: relative; }
+    .carousel__slide .owl-carousel .owl-nav {
+      margin-top: 0; }
+      .carousel__slide .owl-carousel .owl-nav .owl-prev {
+        left: 4.8rem; }
+      .carousel__slide .owl-carousel .owl-nav .owl-next {
+        right: 4.8rem; }
+      .carousel__slide .owl-carousel .owl-nav .owl-prev,
+      .carousel__slide .owl-carousel .owl-nav .owl-next {
+        color: #ffffff !important;
+        font-size: 5rem !important;
+        position: absolute;
+        top: 30%;
+        z-index: 10; }
+      .carousel__slide .owl-carousel .owl-nav .owl-prev:link,
+      .carousel__slide .owl-carousel .owl-nav .owl-prev:visited,
+      .carousel__slide .owl-carousel .owl-nav .owl-prev:hover,
+      .carousel__slide .owl-carousel .owl-nav .owl-prev:focus,
+      .carousel__slide .owl-carousel .owl-nav .owl-next:link,
+      .carousel__slide .owl-carousel .owl-nav .owl-next:visited,
+      .carousel__slide .owl-carousel .owl-nav .owl-next:hover,
+      .carousel__slide .owl-carousel .owl-nav .owl-next:focus {
+        outline: none;
+        background: transparent !important; }
+    .carousel__slide .owl-carousel .owl-dot {
+      margin-top: 3.2rem; }
+      .carousel__slide .owl-carousel .owl-dot span {
+        background: #4c4f91; }
+      .carousel__slide .owl-carousel .owl-dot:hover span {
+        background: #4ad891; }
+    .carousel__slide .owl-carousel .active span {
+      background: #4ad891 !important; }
+  .carousel__slide__item {
+    z-index: 5; }
+    .carousel__slide__item__image {
+      width: 100%;
+      height: 100%; }
 
 .reviews {
   padding: 10.04rem 16rem; }
