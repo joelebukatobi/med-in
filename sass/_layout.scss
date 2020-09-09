@@ -196,6 +196,15 @@
   }
   @media (min-width: 768px) and (max-width: 1024px) {
     padding: 4.8rem 4.8rem;
+    &__nav {
+      &__list {
+        &__item {
+          &__link {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
   }
 }
 

@@ -232,7 +232,9 @@ body {
       padding: 2.4rem 4.8rem; } }
   @media (min-width: 768px) and (max-width: 1024px) {
     .navbar {
-      padding: 4.8rem 4.8rem; } }
+      padding: 4.8rem 4.8rem; }
+      .navbar__nav__list__item__link {
+        font-size: 1.6rem; } }
 
 .footer {
   padding: 4.8rem 16rem;
@@ -936,8 +938,6 @@ body {
     .doctor__image img {
       width: 50rem;
       height: 50rem; }
-  .doctor .signature img {
-    width: 32rem; }
   .doctor__text .paragraph {
     width: 57rem;
     margin-bottom: 0.8rem;
@@ -969,6 +969,27 @@ body {
         width: 80%;
         text-align: left;
         margin-bottom: 0rem; } }
+  @media (max-width: 1024px) {
+    .doctor {
+      justify-content: space-evenly;
+      padding: 10.4rem 4.8rem; }
+      .doctor__text .paragraph {
+        width: 50rem; } }
+  @media (max-width: 768px) {
+    .doctor {
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 7.2rem 4.8rem; }
+      .doctor__image__bg {
+        left: 0;
+        top: 7rem;
+        width: 100%;
+        height: 30rem; }
+      .doctor__image img {
+        width: 33rem;
+        height: 30rem; }
+      .doctor__text .paragraph {
+        width: 50rem; } }
 
 .doctor__two {
   display: flex;
@@ -978,7 +999,8 @@ body {
   .doctor__two__image {
     position: relative;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
     .doctor__two__image__bg {
       position: absolute;
       top: 5rem;
@@ -990,8 +1012,6 @@ body {
     .doctor__two__image img {
       width: 50rem;
       height: 50rem; }
-  .doctor__two .signature img {
-    width: 32rem; }
   .doctor__two__text .paragraph {
     width: 57rem;
     margin-bottom: 0.8rem;
@@ -1023,6 +1043,27 @@ body {
         width: 80%;
         text-align: left;
         margin-bottom: 0rem; } }
+  @media (max-width: 1024px) {
+    .doctor__two {
+      justify-content: space-evenly;
+      padding: 0 4.8rem; }
+      .doctor__two__text .paragraph {
+        width: 50rem; } }
+  @media (max-width: 768px) {
+    .doctor__two {
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 0 4.8rem; }
+      .doctor__two__image__bg {
+        left: 0;
+        top: 7rem;
+        width: 100%;
+        height: 30rem; }
+      .doctor__two__image img {
+        width: 33rem;
+        height: 30rem; }
+      .doctor__two__text .paragraph {
+        width: 50rem; } }
 
 .services {
   padding: 10.4rem 16rem;
