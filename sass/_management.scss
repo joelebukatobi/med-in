@@ -1,29 +1,29 @@
 .doctor {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 10.4rem 16rem;
   &__image {
+    width: 35%;
     position: relative;
     display: flex;
     flex-direction: column;
     &__bg {
       position: absolute;
-      top: 5rem;
-      left: -5rem;
+      top: 0rem;
+      left: 0rem;
       background: $color-secondary;
-      height: 40rem;
-      width: 10rem;
+      height: 100%;
+      width: 100%;
       z-index: -1;
     }
     & img {
-      width: 50rem;
-      height: 50rem;
+      width: 100%;
+      height: 90%;
     }
   }
   &__text {
+    width: 60%;
     & .paragraph {
-      width: 57rem;
       margin-bottom: 0.8rem;
       text-align: justify;
     }
@@ -37,6 +37,7 @@
     padding: 7.2rem 4.8rem;
     flex-direction: column;
     &__image {
+      width: 100%;
       margin-bottom: 5.6rem;
       &__bg {
         display: none;
@@ -48,6 +49,7 @@
     }
 
     &__text {
+      width: 100%;
       & .paragraph {
         width: auto;
         font-size: 2.1rem;
@@ -66,35 +68,23 @@
     }
   }
 
-  @media (max-width: 1024px) {
-    justify-content: space-evenly;
-    padding: 10.4rem 4.8rem;
+  @media (min-width: 576px) and (max-width: 768px) {
+    padding: 8.8rem 4.8rem;
+    flex-direction: column;
+    &__image {
+      width: 100%;
+      margin-bottom: 2.4rem;
+    }
     &__text {
-      & .paragraph {
-        width: 50rem;
-      }
+      width: 100%;
     }
   }
 
-  @media (max-width: 768px) {
-    align-items: flex-start;
-    justify-content: space-between;
+  @media (min-width: 768px) and (max-width: 1024px) {
     padding: 7.2rem 4.8rem;
-    &__image {
-      &__bg {
-        left: 0;
-        top: 7rem;
-        width: 100%;
-        height: 30rem;
-      }
-      & img {
-        width: 33rem;
-        height: 30rem;
-      }
-    }
     &__text {
       & .paragraph {
-        width: 50rem;
+        font-size: 1.4rem;
       }
     }
   }
@@ -103,30 +93,30 @@
 .doctor__two {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 0 16rem 0 16rem;
   &__image {
+    width: 35%;
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
     &__bg {
       position: absolute;
-      top: 5rem;
-      right: -5rem;
+      top: 0rem;
+      left: 0rem;
       background: $color-secondary;
-      height: 40rem;
-      width: 10rem;
+      height: 100%;
+      width: 100%;
       z-index: -1;
     }
     & img {
-      width: 50rem;
-      height: 50rem;
+      width: 100%;
+      height: 90%;
     }
   }
+
   &__text {
+    width: 60%;
     & .paragraph {
-      width: 57rem;
       margin-bottom: 0.8rem;
       text-align: justify;
     }
@@ -136,9 +126,10 @@
     }
   }
   @media (min-width: 320px) and (max-width: 576px) {
-    padding: 7.2rem 4.8rem;
+    padding: 8.8rem 4.8rem;
     flex-direction: column-reverse;
     &__image {
+      width: 100%;
       margin-bottom: 5.6rem;
       & img {
         width: 100%;
@@ -150,6 +141,7 @@
     }
 
     &__text {
+      width: 100%;
       & .paragraph {
         width: auto;
         font-size: 2.1rem;
@@ -168,35 +160,23 @@
     }
   }
 
-  @media (max-width: 1024px) {
-    justify-content: space-evenly;
-    padding: 0 4.8rem;
+  @media (min-width: 576px) and (max-width: 768px) {
+    padding: 8.8rem 4.8rem;
+    flex-direction: column-reverse;
+    &__image {
+      width: 100%;
+      margin-bottom: 2.4rem;
+    }
     &__text {
-      & .paragraph {
-        width: 50rem;
-      }
+      width: 100%;
     }
   }
 
-  @media (max-width: 768px) {
-    align-items: flex-start;
-    justify-content: space-between;
+  @media (min-width: 768px) and (max-width: 1024px) {
     padding: 0 4.8rem;
-    &__image {
-      &__bg {
-        left: 0;
-        top: 7rem;
-        width: 100%;
-        height: 30rem;
-      }
-      & img {
-        width: 33rem;
-        height: 30rem;
-      }
-    }
     &__text {
       & .paragraph {
-        width: 50rem;
+        font-size: 1.4rem;
       }
     }
   }

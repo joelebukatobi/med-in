@@ -19,6 +19,9 @@
     @media (min-width: 320px) and (max-width: 576px) {
       flex-direction: column;
     }
+    @media (min-width: 576px) and (max-width: 768px) {
+      flex-direction: column;
+    }
     &__card {
       box-shadow: 0px 2px 2px rgba(87, 87, 87, 0.15);
       &:not(:last-child) {
@@ -46,9 +49,21 @@
         }
         margin-bottom: 4.8rem;
       }
+      @media (min-width: 576px) and (max-width: 768px) {
+        &:not(:last-child) {
+          margin-right: 0rem;
+        }
+        &:not(:first-child) {
+          margin-left: 0rem;
+        }
+        margin-bottom: 4.8rem;
+      }
     }
   }
   @media (min-width: 320px) and (max-width: 576px) {
+    padding: 6.4rem 4.8rem;
+  }
+  @media (min-width: 576px) and (max-width: 768px) {
     padding: 6.4rem 4.8rem;
   }
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
