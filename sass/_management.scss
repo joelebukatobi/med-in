@@ -1,7 +1,7 @@
 .doctor {
   display: flex;
   justify-content: space-between;
-  padding: 10.4rem 16rem;
+  padding: 10.4rem 0;
   &__image {
     width: 35%;
     position: relative;
@@ -34,7 +34,7 @@
     }
   }
   @media (min-width: 320px) and (max-width: 576px) {
-    padding: 7.2rem 4.8rem;
+    padding: 7.2rem 3.2rem;
     flex-direction: column;
     &__image {
       width: 100%;
@@ -99,7 +99,6 @@
 .doctor__two {
   display: flex;
   justify-content: space-between;
-  padding: 0 16rem 0 16rem;
   &__image {
     width: 35%;
     position: relative;

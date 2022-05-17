@@ -10,19 +10,12 @@ $color-black: #000000;
   Font Variables
   --------------
 */
-$font-primary: "Quicksand", sans-serif;
-$font-secondary: "Amsterday";
+$font-primary: 'Quicksand', sans-serif;
+$font-secondary: 'Amsterday';
 /* 
   Mixins 
   ------
 */
-@mixin mt-1 {
-  margin-top: 10.4rem;
-}
-
-@mixin mb-1 {
-  margin-bottom: 10.4rem;
-}
 
 @mixin mb-2 {
   margin-bottom: 0.8rem;
@@ -72,8 +65,44 @@ input:active {
   background-color: tranparent;
 }
 
+input::-webkit-input-placeholder {
+  font-family: $font-primary;
+}
+
+input::-moz-placeholder {
+  font-family: $font-primary;
+}
+
+input:-ms-input-placeholder {
+  font-family: $font-primary;
+}
+
+input::-ms-input-placeholder {
+  font-family: $font-primary;
+}
+
 input::placeholder {
   font-family: $font-primary;
+}
+
+textarea::-webkit-input-placeholder {
+  font-family: $font-primary;
+  font-size: 1.6rem;
+}
+
+textarea::-moz-placeholder {
+  font-family: $font-primary;
+  font-size: 1.6rem;
+}
+
+textarea:-ms-input-placeholder {
+  font-family: $font-primary;
+  font-size: 1.6rem;
+}
+
+textarea::-ms-input-placeholder {
+  font-family: $font-primary;
+  font-size: 1.6rem;
 }
 
 textarea::placeholder {
